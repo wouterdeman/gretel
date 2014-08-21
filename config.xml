@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="bite.be.gretel" version="2.0.21" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Gretel</name>
+    <description>Gretel drops crumbles</description>
+    <author />
+    <preference name="KeyboardShrinksView" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="iosPersistentFileLocation" value="Library" />
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <content src="plugins/org.chromium.bootstrap/chromeapp.html" />
+    <feature name="LocationUpdateService">
+        <param name="android-package" value="com.tenforwardconsulting.cordova.bgloc.LocationUpdateService" />
+        <param name="onload" value="true" />
+    </feature>
+    <access origin="https://accounts.google.com/*" />
+    <access origin="https://www.googleapis.com/*" />
+    <access origin="http://localhost:3000/*" />
+    <access origin="http://timesheetservice.herokuapp.com/*" />
+</widget>
