@@ -1,0 +1,228 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest/application": [
+                        {
+                            "xml": "<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"org.chromium.AlarmReceiver\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"org.chromium.NotificationReceiver\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:enabled=\"true\" android:name=\"com.tenforwardconsulting.cordova.bgloc.LocationUpdateService\" android:process=\":remote\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.USE_CREDENTIALS\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" onload=\"true\" value=\"org.apache.cordova.statusbar.StatusBar\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BackgroundGeoLocation\"><param name=\"android-package\" value=\"com.tenforwardconsulting.cordova.bgloc.BackgroundGpsPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"ChromeStorage\"><param name=\"android-package\" value=\"org.chromium.ChromeStorage\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeAlarms\"><param name=\"android-package\" value=\"org.chromium.ChromeAlarms\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeBootstrap\"><param name=\"android-package\" value=\"org.chromium.ChromeBootstrap\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeExtensionURLs\"><param name=\"android-package\" value=\"org.chromium.ChromeExtensionURLs\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"chrome-extension://*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"DisallowOverscroll\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeI18n\"><param name=\"android-package\" value=\"org.chromium.ChromeI18n\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeIdentity\"><param name=\"android-package\" value=\"org.chromium.ChromeIdentity\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://accounts.google.com/*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeNavigation\"><param name=\"android-package\" value=\"org.chromium.ChromeNavigation\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeNotifications\"><param name=\"android-package\" value=\"org.chromium.ChromeNotifications\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "android.support.v4": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "com.google.playservices": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.apache.cordova.labs.keyboard": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.alarms": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.bootstrap": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.frameworks.googleopensource": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.frameworks.googleplus": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.i18n": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.identity": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.idle": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.navigation": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.notifications": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.polyfill.blob_constructor": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.polyfill.CustomEvent": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.polyfill.xhr_features": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.transistorsoft.cordova.background-geolocation": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        }
+    },
+    "dependent_plugins": {
+        "org.chromium.common": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.storage": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        },
+        "org.chromium.runtime": {
+            "PACKAGE_NAME": "bite.be.gretel"
+        }
+    }
+}
